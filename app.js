@@ -1,6 +1,6 @@
         function checkFortune() {
-            var weather = document.getElementById('colour-select').value;
-            var season = parseInt(document.getElementById('number-input').value, 10);
+            var weather = document.getElementById('weather-select').value;
+            var season = parseInt(document.getElementById('season-input').value, 10);
             var result = "味噌ラーメン"; // デフォルトの値
 
             if (colour === "曇り" && season === 春) {
