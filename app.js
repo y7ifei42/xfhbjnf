@@ -1,27 +1,21 @@
         function checkFortune() {
-            var colour = document.getElementById('colour-select').value;
-            var number = parseInt(document.getElementById('number-input').value, 10);
-            var result = "凶"; // デフォルトの値
+            var weather = document.getElementById('colour-select').value;
+            var season = parseInt(document.getElementById('number-input').value, 10);
+            var result = "味噌ラーメン"; // デフォルトの値
 
-            if (colour === "黒" && number === 0) {
-                result = "小吉";
-            } else if (colour === "黒" && number === 1) {
-                result = "中吉";
-            } else if (colour === "黒" && number === 2) {
-                result = "凶";
-            } else if (colour === "白" && number === 0) {
-                result = "中吉";
-            } else if (colour === "白" && number === 1) {
-                result = "中吉";
-            } else if (colour === "白" && number === 2) {
-                result = "大凶";
-            } else if (colour === "オレンジ" && number === 0) {
-                result = "凶";
-            } else if (colour === "オレンジ" && number === 1) {
-                result = "大吉";
-            } else if (colour === "オレンジ" && number === 2) {
-                result = "中吉";
-            }
+            if (colour === "曇り" && season === 春) {
+                result = "醤油ラーメン";
+            } else if (colour === "曇り" && season === 冬) {
+                result = "味噌ラーメン";
+            } else if (colour === "晴れ" && season === 冬) {
+                result = "豚骨ラーメン";
+            } else if (colour === "雨" && season === 秋) {
+                result = "塩ラーメン";
+            } else if (colour === "快晴" && season === 夏) {
+                result = "担々麺";
+            } else if (colour === "雨" && season === 夏) {
+                result = "つけ麺";
+            } 
 
-            document.getElementById('result-output').innerText = "あなたの今週の運勢は【" + result + "】です";
+            document.getElementById('result-output').innerText = "あなたの今夜のラーメンは【" + result + "】です";
         }
