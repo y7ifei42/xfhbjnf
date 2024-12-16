@@ -1,7 +1,7 @@
         function checkFortune() {
             var weather = document.getElementById('weather-select').value;
             var season = parseInt(document.getElementById('season-input').value, 10);
-            var result = document.getElementById('result-output').innerText
+            var result = document.getElementById('result-output').innerText;
 
             if (weather === "曇り" && season === 春) {
                 result = "醤油ラーメン";
