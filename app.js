@@ -17,5 +17,5 @@
                 result = "つけ麺";
             } 
 
-            document.getElementById('result-output').innerText = "あなたの今夜のラーメンは【" + result + "】です";
+            document.getElementById('result-output').innerText = "あなたの今夜のラーメンは【result】です";
         }
